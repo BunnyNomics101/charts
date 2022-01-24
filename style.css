@@ -81,11 +81,11 @@ body {
 }
 
 .chart-toggle--candles {
-	background-image: url("line.svg");
+	background-image: url("candles.svg");
 }
 
 .chart-toggle--line {
-	background-image: url("candles.svg");
+	background-image: url("line.svg");
 }
 
 .chart-toggle:hover {
@@ -93,21 +93,51 @@ body {
 }
 
 .tooltip {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	font-family: "Roboto", "Arial", sans-serif;
-	min-width: 120px;
-	height: 24px;
 	position: absolute;
 	display: none;
-	padding: 6px;
 	box-sizing: border-box;
-	font-size: 11px;
 	background-color: transparent;
 	text-align: center;
 	z-index: 1000;
 	top: 3px;
 	left: 10px;
 	pointer-events: none;
-	color: #5A6168;
 	text-transform: capitalize;
+}
+
+.tooltip__price {
+	padding: 2px;
+	font-size: 36px;
+	line-height: 20px;
+	letter-spacing: -0.06em;
+	font-weight: 300;
+	color: #FFFFFF;
+}
+
+.tooltip__price-small {
+	font-size: 21px;
+	padding-right: 4px;
+}
+
+.tooltip__time {
+	padding: 2px;
+	font-size: 11px;
+	color: #5A6168;
 	letter-spacing: -0.05em;
+}
+
+.green {
+	color: #6ACF9E;
+}
+
+.red {
+	color: #CE5D47;
+}
+
+.yellow {
+	color: #FDD835;
 }
